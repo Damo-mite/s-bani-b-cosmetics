@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop · S'Bani B</title>
+  <meta name="description" content="Raw and infused whipped shea butter in 100ml, 260ml, and 500ml tubs.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="52" height="52">
+        <span class="brand-name">S'Bani B</span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="store.html" aria-current="page">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="section page-intro">
+    <div class="wrap">
+      <p class="eyebrow">Shop</p>
+      <h1>Six tubs, two recipes.</h1>
+      <p class="lede">Raw whipped shea butter, and the same butter infused with coconut oil, avocado butter, and citrus essential oils. Prices are in rand.</p>
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="raw">Raw</button>
+        <button type="button" class="filter-btn" data-filter="infused">Infused</button>
+      </div>
+      <div id="store-grid" class="product-grid"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-name">S'Bani B</p>
+        <p>100% raw shea butter. Infused shea butter. Online and house-call training.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="store.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="fine">Est. 2025 · Prices in South African rand</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

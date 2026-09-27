@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · S'Bani B</title>
+  <meta name="description" content="Contact S'Bani B about an order or a training session.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="52" height="52">
+        <span class="brand-name">S'Bani B</span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="store.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="section page-intro">
+    <div class="wrap contact-layout">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Send a note</h1>
+        <p>Ask about a tub, a house call, or an online training session. Phone, WhatsApp, and a street address can be added here once the client shares them.</p>
+        <p class="muted">This form does not send email yet. Submitting it only confirms the page works.</p>
+      </div>
+      <form id="contact-form" class="form-card">
+        <label>
+          Name
+          <input name="name" type="text" autocomplete="name" required>
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>
+          Phone
+          <input name="phone" type="tel" autocomplete="tel">
+        </label>
+        <label>
+          Subject
+          <select name="subject" required>
+            <option value="general">General</option>
+            <option value="order">Order</option>
+            <option value="training">Training session</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="contact-thanks" class="thanks" hidden tabindex="-1"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-name">S'Bani B</p>
+        <p>100% raw shea butter. Infused shea butter. Online and house-call training.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="store.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="fine">Est. 2025 · Prices in South African rand</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
